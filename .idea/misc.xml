@@ -5,8 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/mp9_my_personal_todo_list_mongodb/pom.xml" />
         <option value="$PROJECT_DIR$/mp16_my_personal_toDo_list_UI/pom.xml" />
+        <option value="$PROJECT_DIR$/my_personal_todo_list_mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/my_personal_toDo_list_UI/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="9.0" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="9" project-jdk-type="JavaSDK" />
 </project>

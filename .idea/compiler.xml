@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mp16_my_personal_toDo_list_UI" />
         <module name="my_list_to_do" />
+        <module name="my_personal_todo_list_mongodb" />
+        <module name="my_personal_toDo_list_UI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mp16_my_personal_toDo_list_UI" target="9" />
       <module name="my_list_to_do" target="9" />
+      <module name="my_personal_todo_list_mongodb" target="9" />
+      <module name="my_personal_toDo_list_UI" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+
+<form th:object="${todo}" th:action="@{/}" method="post">
+    <lable>new todo</lable>
+    </br>
+    <input type="text" th:field="*{task}">
+    <button type="submit">Add todo</button>
+</form>
+
+</br>
+</br>
+
+<form>
+    <table>
+
+        <tr>
+            <th>Todo</th>
+            <th>Done</th>
+        </tr>
+        <tr th:each="todo: ${todos}">
+
+            <td th:text="${todo.task}"></td>
+            <td>
+                <form th:if="${todo.done} == false" th:action="@{/{id}/done(id=${todo.id})}" method="post">
+                    <button name="action" value="done" type="submit">Done</button>
+                </form>
+                <form th:if="${todo.done} == true" th:action="@{/{id}/undone(id=${todo.id})}" method="post">
+                    <button name="action" value="done" type="submit">Undone</button>
+                </form>
+            </td>
+            <td>
+                <form th:action="@{/{id}/delete(id=${todo.id})}" method="post">
+                    <button name="action" value="delete" type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
+

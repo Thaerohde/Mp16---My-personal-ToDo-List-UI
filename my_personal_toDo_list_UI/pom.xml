@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>at.RefugeesCode</groupId>
-	<artifactId>mp16_my_personal_toDo_list_UI</artifactId>
+	<artifactId>my_personal_toDo_list_UI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>mp16_my_personal_toDo_list_UI</name>
+	<name>my_personal_toDo_list_UI</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
