@@ -8,7 +8,7 @@ public class Todo {
 
     private String id;
     private String task;
-    private Boolean done;
+    private boolean done;
 
     public void setId(String id) {
         this.id = id;
@@ -18,7 +18,7 @@ public class Todo {
         this.task = task;
     }
 
-    public void setDone(Boolean done) {
+    public void setDone(boolean done) {
         this.done = done;
     }
 
@@ -31,7 +31,7 @@ public class Todo {
         return task;
     }
 
-    public Boolean getDone() {
+    public boolean getDone() {
         return done;
     }
 

@@ -29,12 +29,10 @@ public class TodoUiEndpoint {
     }
 
     @PostMapping
-    public String postNewTodo(Todo todo) {
+    String postNewTodo(Todo todo) {
         restTemplate.postForEntity(todosurl, todo, Todo.class);
         return "redirect:/";
     }
-
-
 
     @GetMapping
     String page() {
@@ -49,21 +47,23 @@ public class TodoUiEndpoint {
 
     @PostMapping("/{id}/done")
   String setDone(@PathVariable String id) {
-        restTemplate.put(todosurl + "/" + id + "/done", Todo.class);
+        String doneurl = todosurl + "/" + id + "/done";
+        restTemplate.put(doneurl, Todo.class);
         return "redirect:/";
     }
 
-    @PostMapping("/{id}/undone")
+    @PostMapping("/{id}/notdone")
     String setundone(@PathVariable String id) {
-        restTemplate.put(todosurl + "/" + id + "/undone", Todo.class);
+        String undoneurl = todosurl + "/" + id + "/notdone";
+        restTemplate.put(undoneurl, Todo.class);
         return "redirect:/";
 
     }
 
-    @DeleteMapping("/{id}/delete")
+    @PostMapping("/{id}/delete")
     String delete(@PathVariable String id)
     {
-        restTemplate.put(todosurl + "/" + id + "/delete", Todo.class);
+        restTemplate.delete(todosurl + "/" + id + "/delete", Todo.class);
         return "redirect:/";
     }
 }

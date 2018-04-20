@@ -8,6 +8,12 @@ public class Todo {
     @Id
     private String id;
     private String task;
+    private boolean done;
+
+
+    public Todo() {
+
+    }
 
     public Todo(String task, Boolean done) {
         this.task = task;
@@ -30,15 +36,15 @@ public class Todo {
         this.task = task;
     }
 
-    public Boolean getDone() {
+    public boolean getDone() {
         return done;
     }
 
-    public void setDone(Boolean done) {
+    public void setDone(boolean done) {
         this.done = done;
     }
 
-    private Boolean done;
+
 
 
 

@@ -16,8 +16,6 @@ import java.util.stream.Stream;
 
 public class initailzer {
 
-
-
     @Bean
     ApplicationRunner todorunner(Repository repository){
 
@@ -26,8 +24,6 @@ public class initailzer {
             List<Todo> todos = createListOfTodoes();
             repository.saveAll(todos);
         };
-
-
 
     }
 

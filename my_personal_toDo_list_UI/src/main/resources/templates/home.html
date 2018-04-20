@@ -30,8 +30,8 @@
                 <form th:if="${todo.done} == false" th:action="@{/{id}/done(id=${todo.id})}" method="post">
                     <button name="action" value="done" type="submit">Done</button>
                 </form>
-                <form th:if="${todo.done} == true" th:action="@{/{id}/undone(id=${todo.id})}" method="post">
-                    <button name="action" value="done" type="submit">Undone</button>
+                <form th:if="${todo.done} == true" th:action="@{/{id}/notdone(id=${todo.id})}" method="post">
+                    <button name="action" value="done" type="submit">Not done</button>
                 </form>
             </td>
             <td>
